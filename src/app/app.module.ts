@@ -1,12 +1,16 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { StackComponent } from './stack/stack.component';
+import { QueueComponent } from './queue/queue.component';
 
 @NgModule({
-  imports: [BrowserModule, ReactiveFormsModule],
-  declarations: [AppComponent],
+  imports: [CommonModule, BrowserModule, ReactiveFormsModule],
+  exports: [StackComponent],
+  declarations: [AppComponent, StackComponent, QueueComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
