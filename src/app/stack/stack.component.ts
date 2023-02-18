@@ -52,6 +52,7 @@ export class StackComponent implements OnInit {
   }
 
   main() {
+    console.log(`----------スタックの実行開始----------`);
     this.init(); // スタックを初期化
 
     this.push(3); // スタックに 3 を積む {} -> {3}
@@ -70,5 +71,6 @@ export class StackComponent implements OnInit {
 
     // 空かどうかを check: empty の方を出力
     console.log(`${this.isEmpty() ? 'empty' : 'not empty'}`);
+    console.log(`----------スタックの実行終了----------`);
   }
 }

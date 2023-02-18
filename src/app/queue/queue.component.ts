@@ -57,6 +57,7 @@ export class QueueComponent implements OnInit {
   }
 
   main() {
+    console.log(`----------キューの実行開始----------`);
     this.init(); // キューを初期化
 
     this.enqueue(3); // キューに 3 を積む {} -> {3}
@@ -75,5 +76,6 @@ export class QueueComponent implements OnInit {
 
     // 空かどうかを check: empty の方を出力
     console.log(`${this.isEmpty() ? 'empty' : 'not empty'}`);
+    console.log(`----------キューの実行終了----------`);
   }
 }
